@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 import { View, Text, StyleSheet } from "react-native";
 
 export default class Todo extends Component {
   static defaultProps = {
     title: "Excercise"
+  };
+  static propTypes = {
+    title: PropTypes.string
   };
   render() {
     return (
